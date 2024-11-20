@@ -4,7 +4,7 @@ import TextTransition, { presets } from "react-text-transition";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import LayoutWrapper from "../layout_wrapper";
-
+import Link from "next/link";
 
 const TEXTS = ["Dream", "Build", "Own"];
 
@@ -45,17 +45,20 @@ const HeroSection = () => {
             </p>
           </div>
           <div>
-            <Button
-              size="custom"
-              className="rouned-full bg-primary flex items-center gap-3 p-4"
-              style={{
-                border: "border: 1.25px solid #7963BD",
-                boxShadow: "box-shadow: 0px 0px 15.5px 0px rgba(255, 255, 255, 0.50) inset",
-              }}
-            >
-              <Image src="/assets/images/add.svg" alt="btn" height={24} width={24} />
-              <p className="text-wrap ">Launch your online business now, for free!</p>
-            </Button>
+            <Link href="https://merchant.zatiqeasy.com/" target="_blank">
+              <Button
+                size="custom"
+                className="rouned-full bg-primary flex items-center gap-3 p-4"
+                style={{
+                  border: "border: 1.25px solid #7963BD",
+                  boxShadow: "box-shadow: 0px 0px 15.5px 0px rgba(255, 255, 255, 0.50) inset",
+                }}
+              >
+                <Image src="/assets/images/add.svg" alt="btn" height={24} width={24} />
+                <p className="text-wrap ">Launch your online business now, for free!</p>
+              </Button>
+            </Link>
+
             <p className=" text-blue-200 text-md mt-2">(no credit card / payment required)</p>
           </div>
         </LayoutWrapper>

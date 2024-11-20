@@ -3,15 +3,15 @@ import Link from "next/link";
 export const navLinkList = [
   {
     name: "Affiliate",
-    url: "/#",
+    url: "https://affiliate.zatiqeasy.com/",
   },
   {
     name: "Contact",
-    url: "/#",
+    url: "https://www.zatiq.com/contact-us",
   },
   {
     name: "About us",
-    url: "/#",
+    url: "https://www.zatiq.com/about-us",
   },
 ];
 

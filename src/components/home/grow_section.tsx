@@ -13,12 +13,7 @@ const GrowSection = () => {
         {growList?.map((item, index) => (
           <div
             className={cn(
-              "aspect-[343/511] relative overflow-clip py-10 md:pb-6 md:pt-0 rounded-3xl bg-[linear-gradient(150deg,_#40526F_1.15%,_#051328_100.18%)]  flex flex-col justify-end items-center gap-6",
-              {
-                "md:pt-14": index === 0,
-                "md:pt-18": index === 1,
-                "md:pt-5": index === 2,
-              }
+              "aspect-[343/511] relative overflow-clip p-4 md:p-10 rounded-3xl bg-[linear-gradient(150deg,_#40526F_1.15%,_#051328_100.18%)]  flex flex-col justify-between items-center",
             )}
             key={index}
           >
@@ -37,12 +32,10 @@ const GrowSection = () => {
               </div>
             )}
             <div
-              className={cn("w-full  flex flex-col justify-end items-center z-[3]", {
-                "w-[80%]": index === 1,
-                "px-6 md:px-12": index === 0 || index === 2,
+              className={cn("w-full  flex flex-col justify-center h-[70%] items-center z-[3]", {
               })}
             >
-              <Image src={item?.imageUrl ?? ""} alt="fast" width={500} height={10} className="w-full" />
+              <Image src={item?.imageUrl ?? ""} alt="fast" width={500} height={10} className="w-[90%]" />
             </div>
             <div className="space-y-3 text-blue-gray-200">
               <div className="font-medium text-2.3xl md:text-[28px]"> {item?.title}</div>

@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import { landingPricingList } from "@/utils/constants";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-
+import Link from "next/link";
 
 const PricingSection = () => {
   return (
@@ -47,19 +47,21 @@ const PricingSection = () => {
                 <p className="text-md text-[#EEE9FF]">
                   <span className="font-semibold text-4xl">{item?.price ?? 0}</span> BDT per month
                 </p>
-                <Button
-                  className={cn("rounded-full w-full p-4 mt-6 shadow-[inset_0px_0px_15.5px_rgba(255,255,255,0.5)]  border-2", {
-                    "border-blue-gray-400": item?.id === 0,
-                    "border-[#C1B5E5]": item?.id === 1,
-                  })}
-                  size="custom"
-                  style={{
-                    backgroundColor: item?.color?.button ?? "",
-                  }}
-                >
-                  <Image src={item?.buttonIconUrl ?? ""} alt="fast" width={24} height={24} className="aspect-square" />
-                  <p className="text-lg">{item?.buttonText}</p>
-                </Button>
+                <Link href="https://merchant.zatiqeasy.com/" target="_blank">
+                  <Button
+                    className={cn("rounded-full w-full p-4 mt-6 shadow-[inset_0px_0px_15.5px_rgba(255,255,255,0.5)]  border-2", {
+                      "border-blue-gray-400": item?.id === 0,
+                      "border-[#C1B5E5]": item?.id === 1,
+                    })}
+                    size="custom"
+                    style={{
+                      backgroundColor: item?.color?.button ?? "",
+                    }}
+                  >
+                    <Image src={item?.buttonIconUrl ?? ""} alt="fast" width={24} height={24} className="aspect-square" />
+                    <p className="text-lg">{item?.buttonText}</p>
+                  </Button>
+                </Link>
               </div>
             </div>
           ))}

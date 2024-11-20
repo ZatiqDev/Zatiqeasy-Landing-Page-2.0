@@ -3,6 +3,7 @@ import { landingPricingList } from "@/utils/constants";
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const PricingSection = () => {
   return (
@@ -32,16 +33,18 @@ const PricingSection = () => {
               <p className="text-md">
                 <span className="font-semibold text-4xl">{item?.price ?? 0}</span> BDT per month
               </p>
-              <Button
-                className="rounded-full w-full py-3 mt-6"
-                size="custom"
-                style={{
-                  backgroundColor: item?.color?.button ?? "",
-                }}
-              >
-                <Image src={item?.buttonIconUrl ?? ""} alt="fast" width={24} height={24} className="aspect-square" />
-                <p>{item?.buttonText}</p>
-              </Button>
+              <Link href="https://merchant.zatiqeasy.com/" target="_blank">
+                <Button
+                  className="rounded-full w-full py-3 mt-6"
+                  size="custom"
+                  style={{
+                    backgroundColor: item?.color?.button ?? "",
+                  }}
+                >
+                  <Image src={item?.buttonIconUrl ?? ""} alt="fast" width={24} height={24} className="aspect-square" />
+                  <p>{item?.buttonText}</p>
+                </Button>
+              </Link>
             </div>
           </div>
         ))}

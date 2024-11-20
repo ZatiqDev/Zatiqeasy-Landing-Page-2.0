@@ -32,7 +32,7 @@ const Nav = () => {
           <div className="bg-white drop-shadow-2xl rounded-2xl flex flex-col justify-between items-center  w-full h-full relative app-px py-4 animate__animated animate__slideInDown">
             <div className="flex flex-col gap-12 justify-center items-center flex-grow">
               {navLinkList?.map((item, index) => (
-                <Link href={item?.url ?? "#"} key={index} className="font-bold hover:underline cursor-pointer text-2xl">
+                <Link href={item?.url ?? "#"} target="_blank" key={index} className="font-bold hover:underline cursor-pointer text-2xl">
                   {item?.name}
                 </Link>
               ))}

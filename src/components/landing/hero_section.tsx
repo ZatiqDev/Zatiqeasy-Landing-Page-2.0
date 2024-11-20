@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import TextTransition, { presets } from "react-text-transition";
-
+import Link from "next/link";
 
 const TEXTS = ["Dream", "Build", "Own"];
 
@@ -21,7 +21,7 @@ const HeroSection = () => {
     <div
       className="w-full relative flex flex-col items-center "
       style={{
-        background: 'linear-gradient(180deg, #E6DEFF 0%, rgba(255, 255, 255, 0) 50%, #F6F3FF 100%)',
+        background: "linear-gradient(180deg, #E6DEFF 0%, rgba(255, 255, 255, 0) 50%, #F6F3FF 100%)",
       }}
     >
       <Image
@@ -52,16 +52,19 @@ const HeroSection = () => {
             <p className="text-center font-bold lg:text-lg text-cool-gray-600">ZatiqEasy has you covered</p>
             <p className="text-center text-wrap text-[42px] lg:[74px] font-bold text-cool-gray-900 flex  justify-center items-center">
               <div className="flex gap-2">
-                <TextTransition springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]} </TextTransition> <p> it</p>
+                <p>Dream it, Build it, Own it</p>
+                {/* <TextTransition springConfig={presets.gentle}>{TEXTS[index % TEXTS.length]} </TextTransition> <p> it</p> */}
               </div>
             </p>
             <p className="text-center font-semibold lg:text-lg text-cool-gray-600 max-w-[742px]">
               From inventory management to website performance optimization, a comprehensive E-commerce platform for all your business needs
             </p>
           </div>
-          <Button className="font-gilmer text-md  py-4 px-7 mt-[56px] lg:mt-[76px]" size="custom">
-            Launch your store now
-          </Button>
+          <Link href="https://merchant.zatiqeasy.com/" target="_blank">
+            <Button className="font-gilmer text-md  py-4 px-7 mt-[56px] lg:mt-[76px]" size="custom">
+              Launch your store now
+            </Button>
+          </Link>
         </div>
         <Image src="/assets/images/hero.png" alt="zatiqeasy" width={881.69} height={600} className="w-full max-w-[881px] pt-[56px] lg:pt-[76px]" />
       </div>

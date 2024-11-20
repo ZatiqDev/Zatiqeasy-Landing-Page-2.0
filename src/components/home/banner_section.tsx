@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const BannerSection = () => {
   return (
@@ -24,10 +25,19 @@ const BannerSection = () => {
           backgroundImage: "url(/assets/images/banner_bg.png)",
         }}
       >
-        <div className="bg-[#541DFF]/70 w-full h-full px-5 md:px-14 py-13 md:py-20 flex flex-col items-center">
+        <div className="bg-transparent w-full h-full px-5 md:px-14 py-13 md:py-20 flex flex-col items-center">
           <p className="font-helvetica-display font-bold md:font-medium text-center text-4xl md:text-[62px] text-blue-gray-100">
             Take the first step in building your dream!
           </p>
+          <Link href="https://merchant.zatiqeasy.com/" target="_blank">
+            <Button
+              className="flex items-center justify-center  rounded-full  px-6 py-4 mt-6 shadow-[inset_0px_0px_15.5px_rgba(255,255,255,0.5)] bg-[#6634FF] border-2 border-[#C1B5E5]"
+              size="custom"
+            >
+              <Image src="/assets/images/add.svg" alt="fast" width={24} height={24} className="aspect-square" />
+              <p className="text-lg text-wrap">Launch your online business now, for free!</p>
+            </Button>
+          </Link>
           <Button
             className="flex items-center justify-center  rounded-full  px-6 py-4 mt-6 shadow-[inset_0px_0px_15.5px_rgba(255,255,255,0.5)] bg-[#6634FF] border-2 border-[#C1B5E5]"
             size="custom"
