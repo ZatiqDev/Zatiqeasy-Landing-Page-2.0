@@ -17,7 +17,7 @@ const Nav = () => {
           <Image src="/assets/images/logo.svg" alt="logo" width={150} height={40} className="aspect-[150/40] w-fit h-8 md:h-10" />
           <div className="hidden md:flex gap-12 items-center w-fit">
             {navLinkList?.map((item, index) => (
-              <Link href={item?.url ?? "#"} key={index} className="font-bold hover:underline cursor-pointer">
+              <Link href={item?.url ?? "#"}  target="_blank" key={index} className="font-bold hover:underline cursor-pointer">
                 {item?.name}
               </Link>
             ))}

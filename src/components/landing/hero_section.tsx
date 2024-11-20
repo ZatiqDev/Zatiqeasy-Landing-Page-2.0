@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import TextTransition, { presets } from "react-text-transition";
 import Link from "next/link";
-
+import Spline from "@splinetool/react-spline";
 const TEXTS = ["Dream", "Build", "Own"];
 
 const HeroSection = () => {
@@ -24,6 +24,9 @@ const HeroSection = () => {
         background: "linear-gradient(180deg, #E6DEFF 0%, rgba(255, 255, 255, 0) 50%, #F6F3FF 100%)",
       }}
     >
+      {/* <div className=" lg:size-15 absolute top-[17%] lg:top-[25%] right-[8%]">
+        <Spline scene="https://prod.spline.design/pbsuFX1RaEr-5oCT/scene.splinecode" />
+      </div> */}
       <Image
         src="/assets/images/star.svg"
         alt="zatiqeasy"
