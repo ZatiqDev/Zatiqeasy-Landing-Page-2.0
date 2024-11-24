@@ -1,0 +1,1 @@
+export const placeholderImgaeDataUrl = "https://www.zatiq.com/assets/default.webp";

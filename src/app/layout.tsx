@@ -4,6 +4,7 @@ import "animate.css";
 import "./globals.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
+import { GTMPixelContextProvider } from "@/utils/pixel.context";
 
 const gilmerFont = localFont({
   variable: "--font-gilmer",
@@ -79,6 +80,8 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
+
+      <GTMPixelContextProvider />
       <body className={`${gilmerFont.variable}  ${helveticaNowDisplayFont.variable}  antialiased max-w-[100vw] overflow-x-clip`}>
         <Nav />
         <div className="">{children}</div>
