@@ -12,7 +12,7 @@ const HeroSection = () => {
     <div
       className="w-full h-[579px] lg:h-[762px] flex justify-center items-center bg-center bg-cover"
       style={{
-        backgroundImage: "url(/assets/images/hero_home_bg.png)",
+        backgroundImage: "url(/assets/images/hero_home_bg.webp)",
       }}
     >
       <div className="bg-black/30 w-full h-full">

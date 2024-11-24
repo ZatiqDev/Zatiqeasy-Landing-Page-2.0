@@ -13,7 +13,7 @@ export const metadata = {
     description: "Transform your business with the fastest E-commerce builder",
     images: [
       {
-        url: "/assets/images/content-image.jpeg",
+        url: "/assets/images/content-image.webp",
         width: 1200,
         height: 630,
         alt: "ZatiqEasy",

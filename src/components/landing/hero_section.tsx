@@ -58,7 +58,7 @@ const HeroSection = () => {
             </Button>
           </Link>
         </div>
-        <Image src="/assets/images/hero.png" alt="zatiqeasy" width={881.69} height={600} className="w-full max-w-[881px] pt-[56px] lg:pt-[76px]" />
+        <Image src="/assets/images/hero.webp" alt="zatiqeasy" width={881.69} height={600} className="w-full max-w-[881px] pt-[56px] lg:pt-[76px]" />
       </div>
     </div>
   );

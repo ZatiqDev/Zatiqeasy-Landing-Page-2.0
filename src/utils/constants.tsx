@@ -53,7 +53,7 @@ export const landingPricingList = [
   {
     id: 0,
     name: "Starter plan",
-    iconUrl: "/assets/images/lock.png",
+    iconUrl: "/assets/images/lock.webp",
     description: "Start your website for free with our starter plan!",
     price: "0",
     buttonIconUrl: "/assets/images/add.svg",
@@ -68,7 +68,7 @@ export const landingPricingList = [
   {
     id: 1,
     name: "Premium plan",
-    iconUrl: "/assets/images/diamond.png",
+    iconUrl: "/assets/images/diamond.webp",
     description: "Get Access to unlimited features with our premium plan at just 500 taka per month!",
     price: "500",
     buttonIconUrl: "/assets/images/diamond.svg",
@@ -144,7 +144,7 @@ export const toolList = [
 
 export const impactList = [
   {
-    imageUrl: "/assets/images/website_builder.png",
+    imageUrl: "/assets/images/website_builder.webp",
     title: (
       <p>
         Fastest E-commerce <br />
@@ -154,7 +154,7 @@ export const impactList = [
     description: "Get your website up and running in just 10 seconds. Requires No code, with no complications, in no time.",
   },
   {
-    imageUrl: "/assets/images/streamline.png",
+    imageUrl: "/assets/images/streamline.webp",
     title: (
       <p>
         Streamlined
@@ -165,7 +165,7 @@ export const impactList = [
     description: "Apart from Bkash, Nogod or Rocket, ZatiqEasy has its own payment gateway ZSP that makes transactions easy and effortless.",
   },
   {
-    imageUrl: "/assets/images/delivery_system.png",
+    imageUrl: "/assets/images/delivery_system.webp",
     title: (
       <p>
         Integrated <br />
@@ -178,7 +178,7 @@ export const impactList = [
 
 export const growList = [
   {
-    imageUrl: "/assets/images/grow.png",
+    imageUrl: "/assets/images/grow.webp",
     title: (
       <p className="text-center">
         Fastest
@@ -190,7 +190,7 @@ export const growList = [
     ),
   },
   {
-    imageUrl: "/assets/images/customers.png",
+    imageUrl: "/assets/images/customers.webp",
     title: (
       <p className="text-center">
         Trusted by over <br />
@@ -214,7 +214,7 @@ export const growList = [
     ),
   },
   {
-    imageUrl: "/assets/images/orders.png",
+    imageUrl: "/assets/images/orders.webp",
     title: (
       <p className="text-center">
         Processing

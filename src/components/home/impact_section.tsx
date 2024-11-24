@@ -20,7 +20,7 @@ const ImpactSection = () => {
         <div
           className="bg-center bg-cover rounded-[24px] overflow-clip"
           style={{
-            backgroundImage: "url(/assets/images/gradient_bg.png)",
+            backgroundImage: "url(/assets/images/gradient_bg.webp)",
           }}
         >
           <div
@@ -58,7 +58,7 @@ const ImpactSection = () => {
         <div
           className="bg-center bg-cover rounded-[24px] overflow-clip"
           style={{
-            backgroundImage: "url(/assets/images/gradient_bg.png)",
+            backgroundImage: "url(/assets/images/gradient_bg.webp)",
           }}
         >
           <div

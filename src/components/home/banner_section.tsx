@@ -22,7 +22,7 @@ const BannerSection = () => {
       <div
         className="col-span-3 lg:col-span-2 rounded-3xl aspect-[344/438] md:aspect-[952/524] overflow-clip"
         style={{
-          backgroundImage: "url(/assets/images/banner_bg.png)",
+          backgroundImage: "url(/assets/images/banner_bg.webp)",
           backgroundSize: "cover", // Ensures the image covers the entire container
           backgroundPosition: "center", // Centers the image
           backgroundRepeat: "no-repeat", // Prevents tiling of the image
