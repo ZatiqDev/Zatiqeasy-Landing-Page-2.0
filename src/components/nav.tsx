@@ -14,7 +14,7 @@ const Nav = () => {
     <>
       <LayoutWrapper className="items-center fixed top-4 z-[99]">
         <div className=" w-full  backdrop-blur-2xl bg-white/55 drop-shadow-xl rounded-full px-5 md:px-9 h-15 md:h-20 flex items-center justify-between">
-          <Image src="/assets/images/logo.svg" alt="logo" width={150} height={40} className="aspect-[150/40] w-fit h-8 md:h-10" />
+          <Link href="/">  <Image src="/assets/images/logo.svg" alt="logo" width={150} height={40} className="aspect-[150/40] w-fit h-8 md:h-10" /></Link>
           <div className="hidden md:flex gap-12 items-center w-fit">
             {navLinkList?.map((item, index) => (
               <Link href={item?.url ?? "#"}  target="_blank" key={index} className="font-bold hover:underline cursor-pointer">
