@@ -13,7 +13,7 @@ const LandingFooter = () => {
           <div>
             <p className="font-semibold text-md">Address</p>
             <p className="text-sm mt-1 md:max-w-[410px] text-cool-gray-300">
-              USA: 1300 S 5th Ave, Pocatello, ID 83201 Canada: 107-5355 Waverley Dr SW, Calgary, AB, T3C2P7 <br/> Bangladesh: Wahab Point, Dhanmondi, Dhaka
+              USA: 1300 S 5th Ave, Pocatello, ID 83201 Canada: 107-5355 Waverley Dr SW, Calgary, AB, T3C2P7 <br/> Bangladesh: Pearsons Tower, 299 Elephant Road, Dhaka 1205, Bangladesh.
               <br/>Pakistan: Old Anarkali road, Lahore
             </p>
           </div>
