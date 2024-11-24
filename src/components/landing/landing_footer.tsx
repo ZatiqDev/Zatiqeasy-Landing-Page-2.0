@@ -13,15 +13,15 @@ const LandingFooter = () => {
           <div>
             <p className="font-semibold text-md">Address</p>
             <p className="text-sm mt-1 md:max-w-[410px] text-cool-gray-300">
-              USA: 1300 S 5th Ave, Pocatello, ID 83201 Canada: 107-5355 Waverley Dr SW, Calgary, AB, T3C2P7 Bangladesh: Wahab Point, Dhanmondi, Dhaka
-              Pakistan: Old Anarkali road, Lahore
+              USA: 1300 S 5th Ave, Pocatello, ID 83201 Canada: 107-5355 Waverley Dr SW, Calgary, AB, T3C2P7 <br/> Bangladesh: Wahab Point, Dhanmondi, Dhaka
+              <br/>Pakistan: Old Anarkali road, Lahore
             </p>
           </div>
           <div className="grid grid-cols-2 gap-5">
             <div>
               <p className="font-semibold text-md">Email</p>
-              <Link href="mailto:admin@zatiq.com" className="text-sm mt-1 text-cool-gray-300">
-                admin@zatiq.com
+              <Link href="mailto:info@zatiq.com" className="text-sm mt-1 text-cool-gray-300">
+                info@zatiq.com
               </Link>
             </div>
             <div className="text-end">
@@ -39,7 +39,7 @@ const LandingFooter = () => {
           </div>
           <div className="flex gap-5 items-center justify-start md:justify-end">
             {socialLinks?.map((item, index) => (
-              <Link key={index} href={item?.url ?? "#"}>
+              <Link key={index} href={item?.url ?? "#"} target="_blank">
                 <Image src={item?.iconUrl ?? ""} alt={item?.name ?? "social icon"} width={36} height={36} />
               </Link>
             ))}

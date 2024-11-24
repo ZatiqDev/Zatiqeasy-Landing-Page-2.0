@@ -91,28 +91,28 @@ export const socialLinks = [
   {
     name: "Linkedin",
     iconUrl: "/assets/images/linkedin.svg",
-    url: "https://www.linkedin.com/company/zatiqeasy/",
+    url: "https://www.linkedin.com/company/zatiq",
   },
   {
     name: "Youtube",
     iconUrl: "/assets/images/youtube.svg",
-    url: "https://www.youtube.com/@zatiqeasy",
+    url: "https://www.youtube.com/@Zatiqofficial",
   },
   {
     name: "Instagram",
     iconUrl: "/assets/images/instagram.svg",
     url: "https://www.instagram.com/zatiqeasy/",
   },
-  {
-    name: "Telegram",
-    iconUrl: "/assets/images/telegram.svg",
-    url: "https://t.me/zatiqeasy",
-  },
-  {
-    name: "Tiktok",
-    iconUrl: "/assets/images/tiktok.svg",
-    url: "https://www.tiktok.com/@zatiqeasy",
-  },
+  // {
+  //   name: "Telegram",
+  //   iconUrl: "/assets/images/telegram.svg",
+  //   url: "https://t.me/zatiqeasy",
+  // },
+  // {
+  //   name: "Tiktok",
+  //   iconUrl: "/assets/images/tiktok.svg",
+  //   url: "https://www.tiktok.com/@zatiqeasy",
+  // },
 ];
 
 export const toolList = [
@@ -206,7 +206,7 @@ export const growList = [
           <div>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="12" r="12" fill="#E2E8F0" />
-              <path d="M8 16L16 8M16 8H10M16 8V14" stroke="#334155" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8 16L16 8M16 8H10M16 8V14" stroke="#334155" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
         </div>

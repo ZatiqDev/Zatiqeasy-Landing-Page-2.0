@@ -2,21 +2,10 @@
 import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import TextTransition, { presets } from "react-text-transition";
 import Link from "next/link";
-import Spline from "@splinetool/react-spline";
-const TEXTS = ["Dream", "Build", "Own"];
 
 const HeroSection = () => {
-  const [index, setIndex] = React.useState(0);
 
-  React.useEffect(() => {
-    const intervalId = setInterval(
-      () => setIndex((index) => index + 1),
-      3000 // every 3 seconds
-    );
-    return () => clearTimeout(intervalId);
-  }, []);
   return (
     <div
       className="w-full relative flex flex-col items-center "

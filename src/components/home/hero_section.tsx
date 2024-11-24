@@ -1,23 +1,12 @@
-"use client";
 import React from "react";
-import TextTransition, { presets } from "react-text-transition";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import LayoutWrapper from "../layout_wrapper";
 import Link from "next/link";
+import TextTransactionComponent from "./text_transaction.component";
 
-const TEXTS = ["Dream", "Build", "Own"];
 
 const HeroSection = () => {
-  const [index, setIndex] = React.useState(0);
-
-  React.useEffect(() => {
-    const intervalId = setInterval(
-      () => setIndex((index) => index + 1),
-      3000 // every 3 seconds
-    );
-    return () => clearTimeout(intervalId);
-  }, []);
 
   return (
     <div
@@ -32,10 +21,8 @@ const HeroSection = () => {
           childrenClassName="pt-[124px] lg:pt-[236px] pb-[66px] lg:pb-[121px] flex flex-col justify-between items-start w-full h-full"
         >
           <div className="space-y-2">
-            <div className=" font-medium text-5.6xl md:text-8.5xl text-blue-gray-200 flex items-center gap-2">
-              <TextTransition springConfig={presets.gentle}>
-                <p className="!font-helvetica-display">{TEXTS[index % TEXTS.length]} </p>
-              </TextTransition>{" "}
+            <div className=" font-medium text-5.6xl md:text-8.5xl text-blue-gray-200 flex items-center gap-4">
+              <TextTransactionComponent />
               <p className="!font-helvetica-display"> it</p>
             </div>
             <p className="font-gilmer text-2xl md:text-4xl text-blue-gray-300">
