@@ -10,7 +10,7 @@ const PricingSection = () => {
   return (
     <SectionContainer
       title={<p className="font-helvetica-display">Starting a business has never been easier!</p>}
-      subtitle={<p>At just Tk 500 (less than a day's worth of groceries!)</p>}
+      subtitle={<p>At just Tk 500 (less than a day&apos;s worth of groceries!)</p>}
     >
       <div className="text-center">
         {/* <p className="text-blue-gray-900 text-4xl md:text-5xl font-bold">Starting a business has never been easier!</p>

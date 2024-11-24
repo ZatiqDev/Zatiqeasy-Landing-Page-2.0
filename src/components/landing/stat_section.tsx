@@ -11,6 +11,7 @@ const StatSection = () => {
     >
       {landingStatList?.map((item, index) => (
         <div
+        key={index}
           className={cn("p-8 md:py-0 md:px-12", {
 
           })}

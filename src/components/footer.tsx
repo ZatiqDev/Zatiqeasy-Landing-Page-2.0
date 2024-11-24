@@ -2,7 +2,6 @@
 import { usePathname } from "next/navigation";
 import React from "react";
 import LandingFooter from "./landing/landing_footer";
-import GeneralFooter from "./general_footer";
 
 
 const Footer = () => {

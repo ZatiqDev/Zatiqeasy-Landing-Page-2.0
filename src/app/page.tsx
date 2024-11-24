@@ -7,7 +7,23 @@ import ToolSection from "@/components/home/tool_section";
 import LayoutWrapper from "@/components/layout_wrapper";
 import React from "react";
 
-
+export const metadata = {
+  title: "ZatiqEasy",
+  description: "Transform your business with the fastest E-commerce builder",
+  openGraph: {
+    title: "ZatiqEasy",
+    description: "Transform your business with the fastest E-commerce builder",
+    images: [
+      {
+        url: "/assets/images/content-image.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "ZatiqEasy",
+      },
+    ],
+    siteName: "ZatiqEasy",
+  },
+};
 
 const HomePage = () => {
   return (
