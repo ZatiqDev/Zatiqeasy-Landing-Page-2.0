@@ -23,7 +23,7 @@ const LandingFooter = () => {
               <Link href="mailto:info@zatiq.com" className="text-sm mt-1 text-cool-gray-300">
                 info@zatiq.com
               </Link>
-            </div>
+            </div> 
             <div className="text-end">
               <p className="font-semibold text-md">Phone</p>
               <Link href="tel:+8801973392450" className="text-sm mt-1 text-cool-gray-300">
